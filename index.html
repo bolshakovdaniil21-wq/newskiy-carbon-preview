@@ -460,6 +460,16 @@ src:['Про косяки при оклейке','https://www.drive2.ru/b/705300
 {p:'Если на любой из первых четырёх вопросов вы слышите «спрошу у мастера» или «это решает администратор», вы говорите не с тем человеком. Платите тому, кто делает: это и качественнее, и дешевле.'}],
 src:['Пример из бортжурнала: что бывает при оклейке у случайного мастера','https://www.drive2.ru/b/743215435624743975/']}
 };
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href="#contacts"],a[href="#_contacts"]');
+  if(!a)return;
+  var t=document.getElementById('contacts');if(!t)return;
+  e.preventDefault();e.stopImmediatePropagation();
+  var y=t.getBoundingClientRect().top+window.pageYOffset-70;
+  var y0=window.pageYOffset;y=Math.max(0,y);
+  window.scrollTo({top:y,behavior:'smooth'});
+  setTimeout(function(){if(Math.abs(window.pageYOffset-y0)<5&&Math.abs(window.pageYOffset-y)>5){window.scrollTo(0,y)}},700);
+},true);
 function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 function build(){
   var ov=document.createElement('div');ov.id='wk-overlay';
