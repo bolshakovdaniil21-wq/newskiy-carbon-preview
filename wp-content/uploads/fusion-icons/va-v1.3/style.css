@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'va';
+  src:  url('fonts/va.eot?30jc72');
+  src:  url('fonts/va.eot?30jc72#iefix') format('embedded-opentype'),
+    url('fonts/va.ttf?30jc72') format('truetype'),
+    url('fonts/va.woff?30jc72') format('woff'),
+    url('fonts/va.svg?30jc72#va') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="va-"], [class*=" va-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'va' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.va-circle:before {
+  content: "\e906";
+}
+.va-facebook:before {
+  content: "\e903";
+}
+.va-linkedin:before {
+  content: "\e904";
+}
+.va-twitter:before {
+  content: "\e905";
+}
+.va-close:before {
+  content: "\e901";
+}
+.va-menu:before {
+  content: "\e902";
+}
+.va-headphones:before {
+  content: "\e900";
+}
