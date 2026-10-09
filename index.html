@@ -334,6 +334,14 @@ jQuery(document).ready(function(){
 		</a>
 	</section>
 		<style id="wk-style">
+a[aria-label^="free-icon-"]{position:relative;display:block;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.32);background:rgba(255,255,255,.04);transition:background .25s,border-color .25s,transform .25s}
+a[aria-label^="free-icon-"] img{opacity:0 !important}
+a[aria-label^="free-icon-"]::before{content:"";position:absolute;inset:0;margin:auto;width:19px;height:19px;background:#fff;-webkit-mask:var(--wk-ic) center/contain no-repeat;mask:var(--wk-ic) center/contain no-repeat}
+a[aria-label="free-icon-phone"]{--wk-ic:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M22%2016.92v3a2%202%200%200%201-2.18%202%2019.79%2019.79%200%200%201-8.63-3.07%2019.5%2019.5%200%200%201-6-6%2019.79%2019.79%200%200%201-3.07-8.67A2%202%200%200%201%204.11%202h3a2%202%200%200%201%202%201.72%2012.84%2012.84%200%200%200%20.7%202.81%202%202%200%200%201-.45%202.11L8.09%209.91a16%2016%200%200%200%206%206l1.27-1.27a2%202%200%200%201%202.11-.45%2012.84%2012.84%200%200%200%202.81.7A2%202%200%200%201%2022%2016.92z%22/%3E%3C/svg%3E")}
+a[aria-label="free-icon-telegram"]{--wk-ic:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M22%202%2011%2013%22/%3E%3Cpath%20d%3D%22M22%202l-7%2020-4-9-9-4%2020-7z%22/%3E%3C/svg%3E")}
+a[aria-label="free-icon-whatsapp"]{--wk-ic:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M21%2011.5a8.38%208.38%200%200%201-.9%203.8%208.5%208.5%200%200%201-7.6%204.7%208.38%208.38%200%200%201-3.8-.9L3%2021l1.9-5.7a8.38%208.38%200%200%201-.9-3.8%208.5%208.5%200%200%201%204.7-7.6%208.38%208.38%200%200%201%203.8-.9h.5a8.48%208.48%200%200%201%208%208v.5z%22/%3E%3C/svg%3E")}
+a[aria-label^="free-icon-"]:hover{background:#e23026;border-color:#e23026;transform:translateY(-2px)}
+.fusion-image-element:has(a[aria-label^="free-icon-"]){max-width:42px !important;margin-right:12px !important}
 #toTop,.to-top-container{display:none !important}
 .post-content>.fusion-fullwidth:first-child{min-height:100vh;min-height:100svh;box-sizing:border-box;display:flex;align-items:center}
 .wk-text p{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
